@@ -1,5 +1,5 @@
-from keras.models import load_model
-VGG16 = load_model('VGG16.h5')
+from keras import applications
+VGG16 = applications.VGG16()
 VGG16.layers.pop()
 
 from keras import Sequential
